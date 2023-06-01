@@ -4,7 +4,24 @@ public class odev {
     public static void main(String[] args) {
 
         /*
-        **********************************************
+               *********************************************
+               *
+               * Yeni bir package olusturalim : day01
+Yeni bir class olusturalim : C03_GetMethods
+Amazon sayfasina gidelim. https://www.amazon.com/
+Sayfa basligini(title) yazdirin
+Sayfa basliginin “Amazon” icerdigini test edin
+Sayfa adresini(url) yazdirin
+Sayfa url’inin “amazon” icerdigini test edin.
+Sayfa handle degerini yazdirin
+Sayfa HTML kodlarinda “Gateway” kelimesi gectigini test edin
+Sayfayi kapatin.
+*
+*
+*
+*
+*
+*
 ödev : 1
 GetMethods
 Amazon sayfasina gidelim. https://www.amazon.com/
@@ -18,7 +35,40 @@ Sayfayi kapatin.
 **********************************************
 
 
+* //Techproeducation sayfasına gidelim
+//Sonra Amazon sayfasına gidelim
+//Amazon sayfasının başlığını yazdıralım
+//Techproeducation sayfasına geri dönelim
+//Sayfa başlığını yazdıralım
+//Amazon sayfasına tekrar gidip url'i yazdıralım
+//Amazon sayfasındayken sayfayı yenileyelim
+* *****CEVAP
+* //Techproeducation sayfasına gidelim
+        driver.navigate().to("https://techproeducation.com"); // get() methodu ile ayni mantikta calisir. driver.get("https://techproeducation.com");
 
+        //Sonra Amazon sayfasına gidelim
+        driver.navigate().to("https://amazon.com");
+
+        //Amazon sayfasının başlığını yazdıralım
+        System.out.println("Amazon Sayfa Basligi = " + driver.getTitle());
+
+        //Techproeducation sayfasına geri dönelim
+        driver.navigate().back();
+
+        //Sayfa başlığını yazdıralım
+        System.out.println("Techproeducation Sayfa Basligi = " + driver.getTitle());
+
+        //Amazon sayfasına tekrar gidip url'i yazdıralım
+        driver.navigate().forward();
+        System.out.println("Amazon Sayfasi Url´i = " + driver.getCurrentUrl());
+
+        //Amazon sayfasındayken sayfayı yenileyelim
+        driver.navigate().refresh();
+
+
+
+*
+*
 
 ödev : 2
 NavigationMethods
@@ -30,6 +80,13 @@ Sayfayi Refresh(yenile) yapalim
 Sayfayi kapatalim / Tum sayfalari kapatalim
 **********************************************
 
+Yeni bir Class olusturalim.C05_NavigationMethods
+Youtube ana sayfasina gidelim . https://www.youtube.com/
+Amazon soyfasina gidelim. https://www.amazon.com/
+Tekrar YouTube’sayfasina donelim
+Yeniden Amazon sayfasina gidelim
+Sayfayi Refresh(yenile) yapalim
+Sayfayi kapatalim / Tum sayfalari kapatalim
 
 
 
@@ -140,7 +197,13 @@ iphone aratınız
 
 
 
-
+// ÖDEV  .
+        // http://the-internet.herokuapp.com/add_remove_elements/ adresine gidiniz
+// Add Element butonuna 100 defa basınız
+// 100 defa basıldığını test ediniz
+// 90 defa delete butonuna basınız
+// 90 defa basıldığını doğrulayınız
+// Sayfayı kapatınız
 
 
 
