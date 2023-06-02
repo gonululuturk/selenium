@@ -54,6 +54,7 @@ public class C01_Xpath {
         // Sayfayı kapatınız
         driver.close();
 
+        //driver.quit();-> Birden fazla browser varsa hepsini kapatır.
 
     }
 }

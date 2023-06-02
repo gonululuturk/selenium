@@ -7,7 +7,7 @@ public class C02_NavigateMethods {
     public static void main(String[] args) throws InterruptedException {
 
         System.setProperty("webdriver.chrome.driver","src/resources/drivers/chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
+        WebDriver driver = new ChromeDriver(); // burda manuel olarak browserı acıyorum
 
         //navigate()to()  ile get() methodu ayni görevi yapiyor. String olan url getirir ikisi de. genellikle get() kullaniliyor.
 
